@@ -1,0 +1,14 @@
+function lib:AddOutline(Character, OutlineFill)
+   local OutlineFill = OutlineFill or false;
+   local Highlight = Instance.new("Highlight", Folder)
+   
+   Highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+   Highlight.Adornee = Character
+   
+   if OutlineFill == true then
+       Highlight.FillColor = Color3.fromRGB(255, 255, 255)
+       Highlight.FillTransparency = 1
+   else
+       Highlight.FillTransparency = 1
+   end
+end
